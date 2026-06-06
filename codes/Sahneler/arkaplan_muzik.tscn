@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://teuyhuc1qw3y"]
+
+[ext_resource type="AudioStream" uid="uid://cypv5tn6jhskm" path="res://Itty Bitty 8 Bit.mp3" id="1_kpxls"]
+
+[node name="ArkaplanMuzik" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_kpxls")
+autoplay = true

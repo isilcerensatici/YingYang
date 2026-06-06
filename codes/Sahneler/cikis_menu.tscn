@@ -1,0 +1,99 @@
+[gd_scene load_steps=8 format=3 uid="uid://cug4streuaw3i"]
+
+[ext_resource type="Script" uid="uid://cy2xm5aefj8nr" path="res://Scripler/bitis_ekrani.gd" id="1_2m7gj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lot5f"]
+bg_color = Color(0.98234254, 0.9823423, 0.9823424, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cge4i"]
+bg_color = Color(0.70980394, 0.70980394, 0.70980394, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fm1u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uh4xy"]
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_51wgm"]
+bg_color = Color(0.2509804, 0.2509804, 0.2509804, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h76c0"]
+bg_color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="CikisMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2m7gj")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="Background"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 60
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 60
+
+[node name="CenterContainer" type="CenterContainer" parent="Background/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Title" type="Label" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "YIN & YANG	"
+horizontal_alignment = 1
+
+[node name="StoryText1" type="Label" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Denge sayenizde sağlandı."
+horizontal_alignment = 1
+
+[node name="StoryText2" type="Label" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Teşekkürler"
+horizontal_alignment = 1
+
+[node name="Space" type="Control" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+
+[node name="BtnYeniden" type="Button" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_lot5f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_cge4i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1fm1u")
+text = "YENİDEN OYNA"
+
+[node name="BtnCikis" type="Button" parent="Background/MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = SubResource("StyleBoxFlat_uh4xy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_51wgm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h76c0")
+text = "ÇIKIŞ"
+
+[connection signal="pressed" from="Background/MarginContainer/CenterContainer/VBoxContainer/BtnYeniden" to="." method="_on_btn_yeniden_pressed"]
+[connection signal="pressed" from="Background/MarginContainer/CenterContainer/VBoxContainer/BtnCikis" to="." method="_on_btn_cikis_pressed"]

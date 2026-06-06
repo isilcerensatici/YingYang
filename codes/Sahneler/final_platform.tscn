@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://rrvlq0a04fo8"]
+
+[ext_resource type="Texture2D" uid="uid://clucjljxy2qsn" path="res://görsel/timerplatform.png" id="1_eo5c5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_obwhj"]
+size = Vector2(64, 16)
+
+[node name="FinalPlatform" type="Node2D"]
+
+[node name="FinalPlatform" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="FinalPlatform"]
+texture = ExtResource("1_eo5c5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalPlatform"]
+shape = SubResource("RectangleShape2D_obwhj")

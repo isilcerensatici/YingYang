@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://6vyn6f4p6slf"]
+
+[ext_resource type="Script" uid="uid://3blggb0ddsob" path="res://Scripler/fire_drop.gd" id="1_ytiul"]
+[ext_resource type="Texture2D" uid="uid://c72vp306e4hds" path="res://görsel/fire.png" id="2_fhygi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_multt"]
+radius = 27.294687
+
+[node name="FireDrop" type="Area2D"]
+script = ExtResource("1_ytiul")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(6.59375, 6.25)
+texture = ExtResource("2_fhygi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_multt")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

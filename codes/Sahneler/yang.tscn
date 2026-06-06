@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bi2vf4w8x21w6"]
+
+[ext_resource type="Texture2D" uid="uid://c5pnnvda78u7i" path="res://görsel/yinyang/Yang.png" id="1_4ji0j"]
+[ext_resource type="Script" uid="uid://b3uisipqpn7x2" path="res://Scripler/yang.gd" id="1_qxi2u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ji0j"]
+size = Vector2(19.5, 36)
+
+[node name="yang" type="Node2D" groups=["oyuncular"]]
+
+[node name="yang" type="CharacterBody2D" parent="." groups=["oyuncular"]]
+script = ExtResource("1_qxi2u")
+
+[node name="Sprite2D" type="Sprite2D" parent="yang"]
+scale = Vector2(0.6458333, 0.7083333)
+texture = ExtResource("1_4ji0j")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yang"]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_4ji0j")

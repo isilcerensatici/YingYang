@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1to0l5qmy8ou"]
+
+[ext_resource type="Script" uid="uid://gx2eb7hid6ri" path="res://Scripler/pause_ui.gd" id="1_46g0i"]
+
+[node name="PauseUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_46g0i")
+
+[node name="PausePanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.5
+offset_top = -37.5
+offset_right = 128.5
+offset_bottom = 37.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "         OYUN DURAKLATILDI
+
+Devam etmek için P tuşuna basın"

@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2r7f5vbnu2ps"]
+
+[ext_resource type="Script" uid="uid://hoxdphovtj48" path="res://Scripler/yin.gd" id="1_1npjj"]
+[ext_resource type="Texture2D" uid="uid://bmbwiwt1wduek" path="res://görsel/yinyang/Yin1.png" id="2_ninhl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ninhl"]
+size = Vector2(24, 37)
+
+[node name="yin1" type="Node2D" groups=["oyuncular"]]
+
+[node name="yin1" type="CharacterBody2D" parent="." groups=["oyuncular"]]
+script = ExtResource("1_1npjj")
+
+[node name="Sprite2D" type="Sprite2D" parent="yin1"]
+position = Vector2(-0.49999952, 0)
+scale = Vector2(0.6770834, 1.0208334)
+texture = ExtResource("2_ninhl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="yin1"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_ninhl")
