@@ -18,6 +18,14 @@ The game aims to demonstrate how contrasting forces can work together to achieve
 * ☯️ Yin-Yang inspired level design
 * 🎨 Original level progression and game mechanics
 * 🛠️ Developed using Godot Engine and GDScript
+  
+## Assets & Credits
+
+Music:
+- "Itty Bitty 8 Bit" by Kevin MacLeod
+
+All rights belong to their respective owners.
+Used for educational and non-commercial purposes.
 
 This project was developed under the supervision of Associate Professor Dr. Fikri Köken and was created in collaboration with my teammate, Muhammed Yusuf Kocaoğlan.
 
