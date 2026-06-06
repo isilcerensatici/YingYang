@@ -1,8 +1,6 @@
 # ☯️ YinYang
 
-## 🎮 English
-
-### About the Project
+### About the Project 🎮 
 
 YinYang is a 2D cooperative puzzle-platform game developed with the Godot Engine as our undergraduate graduation project. Inspired by the ancient Yin-Yang philosophy, the game revolves around the concepts of balance, harmony, interdependence, and the coexistence of opposites.
 
@@ -26,9 +24,7 @@ This project was developed under the supervision of Associate Professor Dr. Fikr
 We sincerely thank our advisor for his guidance, support, and valuable feedback throughout the development process.
 
 
-## 🇹🇷 Türkçe
-
-### Proje Hakkında
+### Proje Hakkında 🎮 
 
 YinYang, lisans bitirme projemiz kapsamında Godot Engine kullanılarak geliştirilmiş 2 boyutlu iş birliğine dayalı bir bulmaca-platform oyunudur. Oyun, Yin-Yang felsefesinden ilham almakta olup denge, uyum, karşıtlıkların birlikteliği ve birbirini tamamlayan güçler üzerine kurulmuştur.
 
